@@ -20,7 +20,7 @@ It traverses the entire ICD-10 hierarchy, saving each code's data as a separate 
 
 1. Fork and clone this repository:
    ```
-   git clone https://github.com/your-username/icd10-data-collection.git
+   git clone https://github.com/gissa/ICD-10-Data-Collection-Script.git
    cd icd10-data-collection
    ```
 
