@@ -1,0 +1,8 @@
+[DEFAULT]
+token = your_bearer_token_here
+output_dir = icd_data
+delay = 0.5
+log_file = icd_api.log
+client_id = xxxx
+client_secret = aaaa
+check_existing = False

@@ -1,6 +1,7 @@
 # ICD-10 Data Collection Script
 
-This Python script fetches and saves data for ICD-10 codes from the World Health Organization (WHO) API. It traverses the entire ICD-10 hierarchy, saving each code's data as a separate JSON file.
+This Python script fetches and saves data for ICD-10 codes from the World Health Organization (WHO) API.
+It traverses the entire ICD-10 hierarchy, saving each code's data as a separate JSON file.
 
 ## Features
 
@@ -17,7 +18,7 @@ This Python script fetches and saves data for ICD-10 codes from the World Health
 
 ## Installation
 
-1. Clone this repository:
+1. Fork and clone this repository:
    ```
    git clone https://github.com/your-username/icd10-data-collection.git
    cd icd10-data-collection
@@ -42,7 +43,8 @@ python icd_api_request.py [options]
 - `--output-dir DIR`: Directory to save the JSON files (default: icd_data)
 - `--delay SECONDS`: Delay between API requests in seconds (default: 0.5)
 - `--log-file FILE`: Log file path (default: icd_api.log)
-- `--config-file FILE`: Path to a configuration file
+- `--config-file FILE`: Path to a configuration file. If you don't have a token,
+                        you can provide client_id and client_secret in a config file.
 
 ### Configuration File
 
@@ -54,6 +56,8 @@ token = your_bearer_token_here
 output_dir = icd_data
 delay = 0.5
 log_file = icd_api.log
+client_id = 'xxxx'
+client_secret = 'aaaa'
 ```
 
 Then run the script with:
